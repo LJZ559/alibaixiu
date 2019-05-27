@@ -1,0 +1,25 @@
+var express=require("express")
+var router=express.Router()
+var pagesControllers=require("./controllers/pagesControllers.js")
+var userControllers=require("./controllers/userControllers.js")
+router.get("/",pagesControllers.getIndexPage)
+    .get("/detail",pagesControllers.getDetailPage)
+    .get("/list",pagesControllers.getListPage)
+
+    .get("/admin",pagesControllers.getAdminPage)
+    .get("/admin/categories",pagesControllers.getCategoriesPage)
+    .get("/admin/comments",pagesControllers.getCommentsPage)
+    .get("/admin/index",pagesControllers.getIndexPage)
+    .get("/admin/login",pagesControllers.getLloginPage)
+    .get("/admin/nav-menus",pagesControllers.getNav_menusPage)
+    .get("/admin/passwords-reset",pagesControllers.getPasswords_resetPage)
+    .get("/admin/post-add",pagesControllers.getPost_addPage)
+    .get("/admin/posts",pagesControllers.getPostsPage)
+    .get("/admin/profile",pagesControllers.getProfilePage)
+    .get("/admin/settings",pagesControllers.getSettingsPage)
+    .get("/admin/slides",pagesControllers.getSlidesPage)
+    .get("/admin/users",pagesControllers.getUsersPage)
+
+    //具体用户请求
+    .post("/login",userControllers.login)
+module.exports=router

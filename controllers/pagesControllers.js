@@ -1,0 +1,51 @@
+
+exports.getIndexPage=(req,res)=>{
+    res.render("index",{})
+}
+exports.getDetailPage=(req,res)=>{
+    res.render("detail",{})
+}
+exports.getListPage=(req,res)=>{
+    res.render("list",{})
+}
+
+
+exports.getAdminPage=(req,res)=>{
+    res.render("admin/index",{})
+}
+exports.getCategoriesPage=(req,res)=>{
+    res.render("admin/categories",{})
+}
+exports.getCommentsPage=(req,res)=>{
+    res.render("admin/comments",{})
+}
+exports.getIndexPage=(req,res)=>{
+    res.render("admin/index",{})
+}
+exports.getLloginPage=(req,res)=>{
+    res.render("admin/login",{})
+}
+exports.getNav_menusPage=(req,res)=>{
+    res.render("admin/nav-menus",{})
+}
+exports.getPasswords_resetPage=(req,res)=>{
+    res.render("admin/passwords-reset",{})
+}
+exports.getPost_addPage=(req,res)=>{
+    res.render("admin/post-add",{})
+}
+exports.getPostsPage=(req,res)=>{
+    res.render("admin/posts",{})
+}
+exports.getProfilePage=(req,res)=>{
+    res.render("admin/profile",{})
+}
+exports.getSettingsPage=(req,res)=>{
+    res.render("admin/settings",{})
+}
+exports.getSlidesPage=(req,res)=>{
+    res.render("admin/slides",{})
+}
+exports.getUsersPage=(req,res)=>{
+    res.render("admin/users",{})
+}
